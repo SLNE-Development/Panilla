@@ -19,7 +19,7 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
           cache: 'gradle'
-          
+
       - name: Cache Gradle wrapper
         uses: actions/cache@v3
         with:
@@ -51,5 +51,3 @@ jobs:
           draft: false
           prerelease: false
           files: panilla-bukkit/build/libs/Panilla.jar
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
