@@ -1,0 +1,15 @@
+plugins {
+    id("io.papermc.paperweight.userdev") version "2.0.0-beta.14"
+}
+
+dependencies {
+    compileOnly project(':panilla-api')
+    implementation 'de.tr7zw:item-nbt-api:2.13.2'
+    paperweight.paperDevBundle("1.21.4-R0.1-SNAPSHOT")
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}

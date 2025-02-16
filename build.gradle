@@ -10,12 +10,15 @@ subprojects {
         mavenLocal()
         mavenCentral()
         maven {
+            url "https://repo.papermc.io/repository/maven-public/"
+        }
+        maven {
             url 'https://repo.codemc.io/repository/maven-public/'
         }
     }
 
-    sourceCompatibility = 1.8
-    targetCompatibility = 1.8
+    sourceCompatibility = 21
+    targetCompatibility = 21
 }
 
 task clean {
