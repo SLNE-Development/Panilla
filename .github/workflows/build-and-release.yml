@@ -44,7 +44,6 @@ jobs:
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
-        token: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
@@ -52,3 +51,4 @@ jobs:
           draft: false
           prerelease: false
           files: panilla-bukkit/build/libs/Panilla.jar
+          token: ${{ secrets.GITHUB_TOKEN }}
