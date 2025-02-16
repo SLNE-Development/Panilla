@@ -34,6 +34,6 @@ jobs:
           body: "Automated release."
           draft: false
           prerelease: false
-          files: build/libs/*-all.jar
+          files: panilla-bukkit/build/libs/Panilla.jar
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
