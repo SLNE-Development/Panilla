@@ -12,7 +12,7 @@ dependencies {
 processResources {
     filesMatching('**plugin.yml') {
         expand(
-            'version': project.parent.version
+                'version': project.parent.version
         )
     }
 }
@@ -23,7 +23,6 @@ tasks.shadowJar {
     relocate("de.tr7zw.changeme.nbtapi", "com.ruinscraft.panilla.lib.nbtapi")
 
     archiveFileName.set("Panilla.jar")
-    destinationDirectory.set(new File("../target/bukkit"))
 }
 
 build.dependsOn(shadowJar)
